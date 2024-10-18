@@ -1,0 +1,15 @@
+<resources>
+    <!-- Custom Favorite Button Style -->
+    <style name="FavoriteButtonStyle" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.SmallComponent</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="iconTint">@color/teal_700</item>
+        <item name="rippleColor">@color/teal_200</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Custom Shape Appearance -->
+    <style name="ShapeAppearance.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">50%</item> <!-- Makes it circular -->
+    </style>
+</resources>

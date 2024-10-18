@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_foodlist">
+
+    <fragment
+        android:id="@+id/navigation_favourite"
+        android:name="com.example.tastybites.ui.Favourite.FavoriteFragment"
+        android:label="@string/title_favourite"
+        tools:layout="@layout/fragment_fooodlist" />
+
+    <fragment
+        android:id="@+id/navigation_foodlist"
+        android:name="com.example.tastybites.ui.FoodList.FoodListFragment"
+        android:label="@string/title_foodlist"
+        tools:layout="@layout/fragment_fooodlist" />
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.example.tastybites.ui.Cart.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart" />
+</navigation>
